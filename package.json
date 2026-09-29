@@ -1,0 +1,30 @@
+{
+  "name": "yuzutrends-schaledb-converter",
+  "version": "1.0.0",
+  "description": "Utility to convert between SchaleDB and YuzuTrends exports.",
+  "keywords": [
+    "Blue Archive",
+    "SchaleDB",
+    "YuzuTrends",
+    "import",
+    "export",
+    "converter"
+  ],
+  "author": "Björn Zeutzheim",
+  "license": "ISC",
+  "type": "module",
+  "main": "converter.ts",
+  "scripts": {
+    "build": "pnpm run build:userscripts",
+    "build:userscripts": "node ./scripts/build-schaledb.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.4",
+    "@types/node": "^26.6.3",
+    "esbuild": "^0.25.0"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.2"
+  }
+}
